@@ -44,7 +44,7 @@ for i in np.arange(0.0,10.0,0.1):
 ''' 
 from sklearn.model_selection import GridSearchCV
 parameters = [{'C':[1,10,100,1000],'kernel':['linear'],'gamma':['auto']},
-               {'C':[1,10,100,1000],'kernel':['rbf','poly','sigmoid'],'gamma':list(np.arange(0.70,0.72,0.001))}]
+               {'C':[1,10,100,1000],'kernel':['rbf','poly','sigmoid'],'gamma':list(np.arange(0.0,1.0,0.1))}]
 
 grid_search = GridSearchCV(estimator=classifier,
                            param_grid=parameters,
