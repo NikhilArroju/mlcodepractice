@@ -44,7 +44,11 @@ for i in np.arange(0.0,10.0,0.1):
 ''' 
 from sklearn.model_selection import GridSearchCV
 parameters = [{'C':[1,10,100,1000],'kernel':['linear'],'gamma':['auto']},
+<<<<<<< HEAD
                {'C':[1,10,100,1000],'kernel':['rbf','poly','sigmoid'],'gamma':list(np.arange(0.1,2.0,0.1))}]
+=======
+               {'C':[1,10,100,1000],'kernel':['rbf','poly','sigmoid'],'gamma':list(np.arange(0.0,1.0,0.1))}]
+>>>>>>> 1509887eebb1c2e9b8bfcd0fb3ed5dde540b1962
 
 grid_search = GridSearchCV(estimator=classifier,
                            param_grid=parameters,
